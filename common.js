@@ -86,7 +86,7 @@ function removeListElement() {
 			parentListItem.remove();
 			todoDta.forEach(function(item) {
 				if(item.value === listItemText) {
-					todoDta.splice(item);
+					todoDta.splice(item, 1);
 					
 				}
 			});
